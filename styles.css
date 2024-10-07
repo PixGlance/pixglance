@@ -1,0 +1,26 @@
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h2 {
+  font-size: 5rem;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  background-image: linear-gradient(to right, #ff00ff, #00ff00, #ff0080, #ff0080);
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: gradient-text 2s infinite linear;
+}
+
+@keyframes gradient-text {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
